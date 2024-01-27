@@ -1,0 +1,91 @@
+.root {
+  --nav-color: black;
+  --nav-font-color: white;
+  --content-bg-color: rgb(218, 218, 218);
+  --content-font-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav li {
+  display: flex;
+  list-style-type: none;
+  font-size: 1.3rem;
+  align-self: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  background-color: var(--nav-color);
+}
+
+.nav {
+  grid-area: 1/1/2/2;
+  display: flex;
+}
+
+.name {
+  margin: 10px;
+
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--nav-font-color);
+}
+
+.nav ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
+
+  color: var(--nav-font-color);
+}
+
+.nav-active {
+  background-color: var(--content-bg-color);
+  color: var(--content-font-color);
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.user-bar {
+  display: flex;
+
+  grid-area: 1/2/2/3;
+  justify-content: end;
+  padding: 10px;
+}
+
+.user-pic-container {
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-pic-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}

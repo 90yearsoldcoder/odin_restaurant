@@ -1,0 +1,26 @@
+.home_container {
+  background-color: var(--content-bg-color);
+  padding: 30px;
+  border: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr 1ft;
+}
+
+.menu_img_container {
+  height: 280px;
+  width: 280px;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 0px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
